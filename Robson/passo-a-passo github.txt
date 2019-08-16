@@ -1,0 +1,6 @@
+git config --global user.name "robsoncezrio"
+git config --global user.email "robsoncezrio@gmail.com"
+cd Desktop/projeto/
+git clone https://github.com/Ernakh//Projeto-de-Software-2019-2
+
+
