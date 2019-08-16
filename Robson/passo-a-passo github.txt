@@ -1,6 +1,14 @@
 git config --global user.name "robsoncezrio"
 git config --global user.email "robsoncezrio@gmail.com"
 cd Desktop/projeto/
-git clone https://github.com/Ernakh//Projeto-de-Software-2019-2
+git clone https://github.com//Ernakh//Projeto-de-Software-2019-2
+
+__________________________________________________________________
+git pull
+git add Robson
+
+git commit -m "TESTE"
+git push
+
 
 
