@@ -1,0 +1,21 @@
+git config --global user.name "robsoncezrio"
+git config --global user.email "robsoncezrio@gmail.com"
+cd Desktop/projeto/
+git clone https://github.com/Ernakh/Projeto-de-Software-2019-2
+cd Projeto-de-Software-2019-2/
+git pull
+__________________________________________________________________
+Criando nova pasta
+git add Bruno-Lucas-Robson/
+git commit -m "Diagrama de atividade"
+git push
+
+
+git pull
+git add Robson
+git pull
+git commit -m "TESTE"
+git push
+
+
+
