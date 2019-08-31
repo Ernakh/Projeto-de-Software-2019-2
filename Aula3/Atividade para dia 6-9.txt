@@ -1,0 +1,1 @@
+Cada um monta o seu diagrama de dominio sobre o projeto.
