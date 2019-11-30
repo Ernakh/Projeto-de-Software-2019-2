@@ -1,0 +1,96 @@
+﻿@model OnlineClients.Models.Pessoa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pessoa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPessoa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoPessoa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CpfCnpj)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CpfCnpj)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataNascimento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cliente)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gerente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gerente)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Recepcionista)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Recepcionista)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChefeCozinha)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChefeCozinha)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fornecedor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fornecedor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdusuarioNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdusuarioNavigation.Idusuario)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Idpessoa">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
