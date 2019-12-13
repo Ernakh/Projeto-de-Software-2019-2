@@ -13275,11 +13275,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usrlab25\\source\\repos\\OnlineClients\\OnlineClients\\OnlineClients.csproj",
+      "projectUniqueName": "C:\\Users\\usrlab25\\Documents\\Projeto-de-Software-2019-2\\Yuri\\OnlineClients\\OnlineClients\\OnlineClients.csproj",
       "projectName": "OnlineClients",
-      "projectPath": "C:\\Users\\usrlab25\\source\\repos\\OnlineClients\\OnlineClients\\OnlineClients.csproj",
+      "projectPath": "C:\\Users\\usrlab25\\Documents\\Projeto-de-Software-2019-2\\Yuri\\OnlineClients\\OnlineClients\\OnlineClients.csproj",
       "packagesPath": "C:\\Users\\usrlab25\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usrlab25\\source\\repos\\OnlineClients\\OnlineClients\\obj\\",
+      "outputPath": "C:\\Users\\usrlab25\\Documents\\Projeto-de-Software-2019-2\\Yuri\\OnlineClients\\OnlineClients\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

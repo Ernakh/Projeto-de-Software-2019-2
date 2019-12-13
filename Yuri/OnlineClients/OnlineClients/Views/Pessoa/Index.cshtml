@@ -1,57 +1,35 @@
 ﻿@model IEnumerable<OnlineClients.Models.Pessoa>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Cadastro de Pessoa";
 }
 
-<h2>Index</h2>
+<h2>Cadastro Online de Clientes</h2>
+
+<hr />
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create">Novo Cliente</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                Nome
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TipoPessoa)
+                CPF/CNPJ
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CpfCnpj)
+                Data de Nascimento
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DataNascimento)
+                Telefone
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Telefone)
+                E-mail
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Funcionario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cliente)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Gerente)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Recepcionista)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ChefeCozinha)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Fornecedor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdusuarioNavigation)
-            </th>
-            <th></th>
+            <th>#</th>
         </tr>
     </thead>
     <tbody>
@@ -59,9 +37,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TipoPessoa)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CpfCnpj)
@@ -76,30 +51,9 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Funcionario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cliente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gerente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Recepcionista)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ChefeCozinha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fornecedor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdusuarioNavigation.Idusuario)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Idpessoa">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Idpessoa">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Idpessoa">Delete</a>
+                <a class="btn btn-primary btn-xs" asp-action="Edit" asp-route-id="@item.Idpessoa">Editar</a>
+                <a class="btn btn-warning btn-xs" asp-action="Details" asp-route-id="@item.Idpessoa">Detalhes</a>
+                <a class="btn btn-danger btn-xs" asp-action="Delete" asp-route-id="@item.Idpessoa">Remover</a>
             </td>
         </tr>
 }

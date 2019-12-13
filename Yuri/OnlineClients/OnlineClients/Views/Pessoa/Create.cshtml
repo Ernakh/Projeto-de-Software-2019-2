@@ -1,21 +1,16 @@
 ﻿@model OnlineClients.Models.Pessoa
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Novo Cliente";
 }
 
-<h2>Create</h2>
+<h2>Novo Cliente</h2>
 
-<h4>Pessoa</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Idusuario" class="control-label"></label>
-                <input asp-for="Idusuario" class ="form-control" asp-items="ViewBag.Idusuario" />
-            </div>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
                 <input asp-for="Nome" class="form-control" />
@@ -23,7 +18,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="TipoPessoa" class="control-label"></label>
-                <input asp-for="TipoPessoa" class="form-control" />
+                <select asp-for="TipoPessoa" class="form-control">
+                    <option value="1">CNPJ</option>
+                    <option value="2">CPF</option>
+                </select>
                 <span asp-validation-for="TipoPessoa" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -47,44 +45,11 @@
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Funcionario" class="control-label"></label>
-                <input asp-for="Funcionario" class="form-control" />
-                <span asp-validation-for="Funcionario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cliente" class="control-label"></label>
-                <input asp-for="Cliente" class="form-control" />
-                <span asp-validation-for="Cliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Gerente" class="control-label"></label>
-                <input asp-for="Gerente" class="form-control" />
-                <span asp-validation-for="Gerente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Recepcionista" class="control-label"></label>
-                <input asp-for="Recepcionista" class="form-control" />
-                <span asp-validation-for="Recepcionista" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ChefeCozinha" class="control-label"></label>
-                <input asp-for="ChefeCozinha" class="form-control" />
-                <span asp-validation-for="ChefeCozinha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Fornecedor" class="control-label"></label>
-                <input asp-for="Fornecedor" class="form-control" />
-                <span asp-validation-for="Fornecedor" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Salvar" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-danger">Cancelar</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

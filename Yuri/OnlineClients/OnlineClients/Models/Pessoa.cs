@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace OnlineClients.Models
 {
@@ -17,10 +18,14 @@ namespace OnlineClients.Models
         public int Idpessoa { get; set; }
         public int Idusuario { get; set; }
         public string Nome { get; set; }
+        [DisplayName("Tipo Pessoa")]
         public int? TipoPessoa { get; set; }
+        [DisplayName("CPF/CNPJ")]
         public string CpfCnpj { get; set; }
+        [DisplayName("Data de Nascimento")]
         public DateTime? DataNascimento { get; set; }
         public string Telefone { get; set; }
+        [DisplayName("E-mail")]
         public string Email { get; set; }
         public byte? Funcionario { get; set; }
         public byte? Cliente { get; set; }
